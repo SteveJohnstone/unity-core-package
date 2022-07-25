@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e91b02ff7af2746ba4c0f989e0dd80, type: 3}
+  m_Name: SceneDefaults
+  m_EditorClassIdentifier: 
+  _cameraPrefab: {fileID: 1048649564569606039, guid: 645f0e9e193209848ada917f81755362, type: 3}
+  _postProcessingPrefab: {fileID: 1160694981814772544, guid: 219ccb0f074e3ac4d84fa842d9128a57, type: 3}
+  _eventPrefab: {fileID: 2202805601713442012, guid: bb6361521630a8f498e3b38f28376600, type: 3}
+  _lightingPrefab: {fileID: 4512071950203776221, guid: 5cd26c217f936094bb85682881ad68d7, type: 3}
