@@ -9,7 +9,7 @@ namespace SteveJstone
     public class ScriptableObjectPool<T> : ScriptableObject where T : MonoBehaviour
     {
         [AssetsOnly]
-        [SerializeField] private T _prefab;
+        [SerializeField, Required] private T _prefab;
         [SerializeField] private int _poolDefaultCapacity = 10;
         [SerializeField] private int _poolSize = 20;
 

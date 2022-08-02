@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.Events;
 
 public class CollisionTrigger : MonoBehaviour
@@ -8,6 +9,13 @@ public class CollisionTrigger : MonoBehaviour
 
     public UnityEvent<GameObject> OnEnter => _onTriggerEnter;
     public UnityEvent<GameObject> OnExit => _onTriggerExit;
+
+    public void Awake()
+    {
+#if UNITY_EDITOR
+        Assert.IsTrue(GetComponent<Collider>().isTrigger, $"{name} collider is not set as a trigger");
+#endif
+    }
 
     private void OnTriggerEnter(Collider other)
     {
