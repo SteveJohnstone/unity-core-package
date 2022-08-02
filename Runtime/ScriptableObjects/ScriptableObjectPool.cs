@@ -1,6 +1,7 @@
 ﻿
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.Pool;
 
 namespace SteveJstone
@@ -16,6 +17,8 @@ namespace SteveJstone
 
         public void OnEnable()
         {
+            Assert.IsNotNull(_prefab, $"Prefab in ScriptableObjectPool ({name}) must not be null");
+
             _pool = new ObjectPool<T>(
                 () => Instantiate(_prefab),
                 (enemy) => enemy.gameObject.SetActive(true),

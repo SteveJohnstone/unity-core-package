@@ -13,8 +13,6 @@ namespace SteveJstone
 		public event UnityAction CameraRotateRightEvent = delegate { };
 		public event UnityAction CameraRotateEvent = delegate { };
 
-		public event UnityAction RotateBuildingEvent;
-
 		private CameraControls _controls;
 
 		private void OnEnable()
